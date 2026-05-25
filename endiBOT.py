@@ -1,14 +1,25 @@
-#Library
+#Libraries
 import os 
 import json
+
+#Global variable
+word = "word"
 
 #Load json file
 with open('words.json', 'r', encoding='utf-8') as file:
     data=json.load(file)
 
 
+#Interaction chatbot
+def start():
+    name = input("Hi! Please insert your name:  ")
+    global word 
+    word = input(f"Welcome {name}!, I can help you to look up words meaning, what word do you like I search?  ")
+    
+
+
 #Find and show a word 
-def find_word(data, word):
+def find_word():
     low_Word = word.lower()
 
     #Validate and show if the word is found 
@@ -26,9 +37,10 @@ def find_word(data, word):
         print("Sorry, We couldn't find the word")
   
     
-    
-    
-find_word(data, "finish")
+
+start() 
+find_word()  
+
 
 
     
