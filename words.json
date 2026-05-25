@@ -1,0 +1,549 @@
+{
+  "hello": {
+    "part_of_speech": "interjection",
+    "meaning": "used as a greeting",
+    "example": "Hello, how are you?"
+  },
+  "book": {
+    "part_of_speech": "noun",
+    "meaning": "a written or printed work",
+    "example": "I am reading a good book."
+  },
+  "computer": {
+    "part_of_speech": "noun",
+    "meaning": "an electronic machine for processing data",
+    "example": "My computer is very fast."
+  },
+  "happy": {
+    "part_of_speech": "adjective",
+    "meaning": "feeling or showing pleasure",
+    "example": "She feels happy today."
+  },
+  "sad": {
+    "part_of_speech": "adjective",
+    "meaning": "feeling unhappy",
+    "example": "He was sad yesterday."
+  },
+  "run": {
+    "part_of_speech": "verb",
+    "meaning": "to move quickly on foot",
+    "example": "I run every morning."
+  },
+  "walk": {
+    "part_of_speech": "verb",
+    "meaning": "to move at a regular pace",
+    "example": "They walk to school."
+  },
+  "eat": {
+    "part_of_speech": "verb",
+    "meaning": "to consume food",
+    "example": "We eat lunch at noon."
+  },
+  "drink": {
+    "part_of_speech": "verb",
+    "meaning": "to consume liquids",
+    "example": "She drinks water every day."
+  },
+  "beautiful": {
+    "part_of_speech": "adjective",
+    "meaning": "pleasing the senses",
+    "example": "The beach is beautiful."
+  },
+  "big": {
+    "part_of_speech": "adjective",
+    "meaning": "large in size",
+    "example": "They live in a big house."
+  },
+  "small": {
+    "part_of_speech": "adjective",
+    "meaning": "little in size",
+    "example": "The cat is small."
+  },
+  "teacher": {
+    "part_of_speech": "noun",
+    "meaning": "a person who teaches",
+    "example": "The teacher explains the lesson."
+  },
+  "student": {
+    "part_of_speech": "noun",
+    "meaning": "a person who studies",
+    "example": "The student is reading."
+  },
+  "school": {
+    "part_of_speech": "noun",
+    "meaning": "a place for education",
+    "example": "The school is near my house."
+  },
+  "city": {
+    "part_of_speech": "noun",
+    "meaning": "a large town",
+    "example": "Bogotá is a big city."
+  },
+  "car": {
+    "part_of_speech": "noun",
+    "meaning": "a road vehicle with four wheels",
+    "example": "His car is new."
+  },
+  "phone": {
+    "part_of_speech": "noun",
+    "meaning": "a device used for communication",
+    "example": "My phone is ringing."
+  },
+  "music": {
+    "part_of_speech": "noun",
+    "meaning": "sounds organized in harmony",
+    "example": "I love listening to music."
+  },
+  "movie": {
+    "part_of_speech": "noun",
+    "meaning": "a motion picture",
+    "example": "We watched a movie last night."
+  },
+  "water": {
+    "part_of_speech": "noun",
+    "meaning": "a transparent liquid essential for life",
+    "example": "Drink more water."
+  },
+  "food": {
+    "part_of_speech": "noun",
+    "meaning": "substances consumed for nutrition",
+    "example": "The food smells good."
+  },
+  "friend": {
+    "part_of_speech": "noun",
+    "meaning": "a person you like and trust",
+    "example": "She is my best friend."
+  },
+  "family": {
+    "part_of_speech": "noun",
+    "meaning": "a group of related people",
+    "example": "My family is very important."
+  },
+  "dog": {
+    "part_of_speech": "noun",
+    "meaning": "a domesticated animal",
+    "example": "The dog is barking."
+  },
+  "cat": {
+    "part_of_speech": "noun",
+    "meaning": "a small domesticated feline",
+    "example": "The cat is sleeping."
+  },
+  "house": {
+    "part_of_speech": "noun",
+    "meaning": "a building for people to live in",
+    "example": "Their house is beautiful."
+  },
+  "work": {
+    "part_of_speech": "verb",
+    "meaning": "to perform a job or task",
+    "example": "I work every weekday."
+  },
+  "study": {
+    "part_of_speech": "verb",
+    "meaning": "to learn about a subject",
+    "example": "She studies English."
+  },
+  "play": {
+    "part_of_speech": "verb",
+    "meaning": "to engage in activity for enjoyment",
+    "example": "Children play in the park."
+  },
+  "love": {
+    "part_of_speech": "verb",
+    "meaning": "to feel deep affection",
+    "example": "I love my family."
+  },
+  "read": {
+    "part_of_speech": "verb",
+    "meaning": "to look at and understand written words",
+    "example": "She reads every night."
+  },
+  "write": {
+    "part_of_speech": "verb",
+    "meaning": "to produce text or symbols",
+    "example": "He writes in a notebook."
+  },
+  "listen": {
+    "part_of_speech": "verb",
+    "meaning": "to pay attention to sound",
+    "example": "Please listen carefully."
+  },
+  "speak": {
+    "part_of_speech": "verb",
+    "meaning": "to say words aloud",
+    "example": "They speak English very well."
+  },
+  "table": {
+    "part_of_speech": "noun",
+    "meaning": "a piece of furniture with a flat top",
+    "example": "The books are on the table."
+  },
+  "chair": {
+    "part_of_speech": "noun",
+    "meaning": "a seat for one person",
+    "example": "Sit on the chair."
+  },
+  "window": {
+    "part_of_speech": "noun",
+    "meaning": "an opening fitted with glass",
+    "example": "Open the window please."
+  },
+  "door": {
+    "part_of_speech": "noun",
+    "meaning": "a movable barrier for entering a room",
+    "example": "Close the door."
+  },
+  "sun": {
+    "part_of_speech": "noun",
+    "meaning": "the star at the center of the solar system",
+    "example": "The sun is shining."
+  },
+  "moon": {
+    "part_of_speech": "noun",
+    "meaning": "the natural satellite of Earth",
+    "example": "The moon looks beautiful tonight."
+  },
+  "star": {
+    "part_of_speech": "noun",
+    "meaning": "a luminous point in the night sky",
+    "example": "I can see a bright star."
+  },
+  "tree": {
+    "part_of_speech": "noun",
+    "meaning": "a tall plant with a trunk",
+    "example": "The tree is very old."
+  },
+  "flower": {
+    "part_of_speech": "noun",
+    "meaning": "the colorful part of a plant",
+    "example": "She bought a red flower."
+  },
+  "river": {
+    "part_of_speech": "noun",
+    "meaning": "a large natural stream of water",
+    "example": "The river is very long."
+  },
+  "mountain": {
+    "part_of_speech": "noun",
+    "meaning": "a large natural elevation of land",
+    "example": "They climbed the mountain."
+  },
+  "beach": {
+    "part_of_speech": "noun",
+    "meaning": "a sandy shore by the sea",
+    "example": "We went to the beach."
+  },
+  "ocean": {
+    "part_of_speech": "noun",
+    "meaning": "a vast body of salt water",
+    "example": "The ocean is calm today."
+  },
+  "bird": {
+    "part_of_speech": "noun",
+    "meaning": "an animal with feathers and wings",
+    "example": "The bird is singing."
+  },
+  "fish": {
+    "part_of_speech": "noun",
+    "meaning": "an animal that lives in water",
+    "example": "The fish swims quickly."
+  },
+  "apple": {
+    "part_of_speech": "noun",
+    "meaning": "a round fruit with red or green skin",
+    "example": "I eat an apple every day."
+  },
+  "banana": {
+    "part_of_speech": "noun",
+    "meaning": "a long curved yellow fruit",
+    "example": "The banana is ripe."
+  },
+  "orange": {
+    "part_of_speech": "noun",
+    "meaning": "a citrus fruit with orange skin",
+    "example": "She drinks orange juice."
+  },
+
+  "travel": {
+    "part_of_speech": "verb",
+    "meaning": "to go from one place to another",
+    "example": "I want to travel around the world."
+  },
+
+  "job": {
+    "part_of_speech": "noun",
+    "meaning": "work that a person does",
+    "example": "She has a new job."
+  },
+
+  "money": {
+    "part_of_speech": "noun",
+    "meaning": "something used to buy goods and services",
+    "example": "I need more money."
+  },
+
+  "market": {
+    "part_of_speech": "noun",
+    "meaning": "a place where people buy and sell products",
+    "example": "We went to the market."
+  },
+
+  "problem": {
+    "part_of_speech": "noun",
+    "meaning": "a difficult situation",
+    "example": "We solved the problem."
+  },
+
+  "question": {
+    "part_of_speech": "noun",
+    "meaning": "something asked to get information",
+    "example": "The student asked a question."
+  },
+
+  "answer": {
+    "part_of_speech": "noun",
+    "meaning": "a reply to a question",
+    "example": "Her answer was correct."
+  },
+
+  "information": {
+    "part_of_speech": "noun",
+    "meaning": "facts or details about something",
+    "example": "The website contains useful information."
+  },
+
+  "language": {
+    "part_of_speech": "noun",
+    "meaning": "a system of communication",
+    "example": "English is an international language."
+  },
+
+  "country": {
+    "part_of_speech": "noun",
+    "meaning": "a nation with its own government",
+    "example": "Colombia is a beautiful country."
+  },
+
+  "world": {
+    "part_of_speech": "noun",
+    "meaning": "the earth and all people on it",
+    "example": "The world is changing quickly."
+  },
+
+  "idea": {
+    "part_of_speech": "noun",
+    "meaning": "a thought or suggestion",
+    "example": "That is a great idea."
+  },
+
+  "team": {
+    "part_of_speech": "noun",
+    "meaning": "a group working together",
+    "example": "Our team won the game."
+  },
+
+  "project": {
+    "part_of_speech": "noun",
+    "meaning": "a planned piece of work",
+    "example": "The project was successful."
+  },
+
+  "system": {
+    "part_of_speech": "noun",
+    "meaning": "a group of connected parts",
+    "example": "The system works correctly."
+  },
+
+  "technology": {
+    "part_of_speech": "noun",
+    "meaning": "the use of science in practical ways",
+    "example": "Technology changes our lives."
+  },
+
+  "internet": {
+    "part_of_speech": "noun",
+    "meaning": "the global computer network",
+    "example": "The internet is very useful."
+  },
+
+  "website": {
+    "part_of_speech": "noun",
+    "meaning": "a collection of web pages",
+    "example": "I visited the company website."
+  },
+
+  "program": {
+    "part_of_speech": "noun",
+    "meaning": "a set of coded instructions for a computer",
+    "example": "The program is running."
+  },
+
+  "database": {
+    "part_of_speech": "noun",
+    "meaning": "an organized collection of data",
+    "example": "The information is stored in the database."
+  },
+
+  "learn": {
+    "part_of_speech": "verb",
+    "meaning": "to gain knowledge",
+    "example": "I want to learn English."
+  },
+
+  "teach": {
+    "part_of_speech": "verb",
+    "meaning": "to help someone learn",
+    "example": "She teaches mathematics."
+  },
+
+  "remember": {
+    "part_of_speech": "verb",
+    "meaning": "to keep information in memory",
+    "example": "I remember your name."
+  },
+
+  "forget": {
+    "part_of_speech": "verb",
+    "meaning": "to fail to remember",
+    "example": "Do not forget your keys."
+  },
+
+  "understand": {
+    "part_of_speech": "verb",
+    "meaning": "to know the meaning of something",
+    "example": "I understand the lesson."
+  },
+
+  "improve": {
+    "part_of_speech": "verb",
+    "meaning": "to become better",
+    "example": "She wants to improve her English."
+  },
+
+  "develop": {
+    "part_of_speech": "verb",
+    "meaning": "to create or grow something",
+    "example": "They develop new software."
+  },
+
+  "create": {
+    "part_of_speech": "verb",
+    "meaning": "to make something new",
+    "example": "We created a chatbot."
+  },
+
+  "change": {
+    "part_of_speech": "verb",
+    "meaning": "to make something different",
+    "example": "Technology changes quickly."
+  },
+
+  "help": {
+    "part_of_speech": "verb",
+    "meaning": "to assist someone",
+    "example": "Can you help me?"
+  },
+
+  "start": {
+    "part_of_speech": "verb",
+    "meaning": "to begin",
+    "example": "The class starts at 8 AM."
+  },
+
+  "finish": {
+    "part_of_speech": "verb",
+    "meaning": "to complete something",
+    "example": "We finished the project."
+  },
+
+  "open": {
+    "part_of_speech": "verb",
+    "meaning": "to move something so it is not closed",
+    "example": "Please open the window."
+  },
+
+  "close": {
+    "part_of_speech": "verb",
+    "meaning": "to shut something",
+    "example": "Close the door."
+  },
+
+  "important": {
+    "part_of_speech": "adjective",
+    "meaning": "having great value or significance",
+    "example": "Education is important."
+  },
+
+  "different": {
+    "part_of_speech": "adjective",
+    "meaning": "not the same",
+    "example": "The two ideas are different."
+  },
+
+  "easy": {
+    "part_of_speech": "adjective",
+    "meaning": "not difficult",
+    "example": "The exercise is easy."
+  },
+
+  "difficult": {
+    "part_of_speech": "adjective",
+    "meaning": "hard to do or understand",
+    "example": "Math can be difficult."
+  },
+
+  "interesting": {
+    "part_of_speech": "adjective",
+    "meaning": "holding attention",
+    "example": "The movie is interesting."
+  },
+
+  "fast": {
+    "part_of_speech": "adjective",
+    "meaning": "moving quickly",
+    "example": "The internet connection is fast."
+  },
+
+  "slow": {
+    "part_of_speech": "adjective",
+    "meaning": "moving with little speed",
+    "example": "The computer is slow."
+  },
+
+  "strong": {
+    "part_of_speech": "adjective",
+    "meaning": "having great power",
+    "example": "She is a strong person."
+  },
+
+  "young": {
+    "part_of_speech": "adjective",
+    "meaning": "having lived for a short time",
+    "example": "The child is very young."
+  },
+
+  "old": {
+    "part_of_speech": "adjective",
+    "meaning": "having lived for many years",
+    "example": "The building is old."
+  },
+
+  "busy": {
+    "part_of_speech": "adjective",
+    "meaning": "having a lot to do",
+    "example": "I am busy today."
+  },
+
+  "available": {
+    "part_of_speech": "adjective",
+    "meaning": "ready to be used",
+    "example": "The room is available."
+  },
+
+  "future": {
+    "part_of_speech": "noun",
+    "meaning": "the time yet to come",
+    "example": "Technology will shape the future."
+  }
+}
