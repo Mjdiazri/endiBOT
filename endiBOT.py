@@ -2,6 +2,8 @@
 import os 
 import json
 
+
+
 #Global variable
 word = "word"
 
