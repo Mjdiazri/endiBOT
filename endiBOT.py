@@ -15,16 +15,34 @@ def start():
     name = input("Hi! Please insert your name:  ")
     global word 
     word = input(f"Welcome {name}!, I can help you to look up words meaning, what word do you like I search?  ")
+    find_word()
+
+def ask():
+    decision = input("Would you like look up for another word?")
+    global decision_low
+    decision_low= decision.lower()
     
 
+def loop():
+    affirmative = ['yes', 'y', 'yep', 'certainly', 'yeah', 'yup', 'sure', 'Okay', 'ok', 'alright', 'totally']
 
+    ask()
+    while decision_low in affirmative:
+        global word
+        word = input('Lets do it, what word do you want look up?')
+        find_word()
+        ask()
+    
+    print('Ok! see you later aligater') 
+    
+    
 #Find and show a word 
 def find_word():
     low_Word = word.lower()
 
     #Validate and show if the word is found 
     if data.get(low_Word):
-        print("Palabra encontrada")
+        
         speech = data[low_Word]["part_of_speech"]
         meaning = data[low_Word]["meaning"]
         example = data[low_Word]["example"]
@@ -39,7 +57,9 @@ def find_word():
     
 
 start() 
-find_word()  
+loop()
+
+ 
 
 
 
