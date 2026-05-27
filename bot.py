@@ -16,11 +16,14 @@ with open('words.json', 'r', encoding='utf-8') as file:
 #Start chatbot
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, 'Hi, welcome to EndiBOT. I can help you to look up word meanings, what word do you like I search?')
+    name = message.chat.first_name   
+
+    bot.send_message(message.chat.id, f"Hi {name}, welcome to EndiBOT!!! I can look up word meanings.")
+    word= bot.send_message(message.chat.id, "Type a word for help you.... ")
    
 
+#Check request and status
+print('EndiBOT started.....')   
+bot.infinity_polling() 
 
-#Check request
-#bot.infinity_polling() 
-print('EndiBOT started.....')
 
