@@ -29,10 +29,18 @@ def send_response(message):
         print('comming message....')
         global word
         word = message.text
-        find_word(message)
-        bot.send_message(message.chat.id, f"{upperWord} \n Part of speech: {speech}\n Meaning: {meaning}\n Example: {example}")
-        msg = bot.send_message(message.chat.id, "Would you like to look up for another word?  /sure   ||      /nop")      
-        bot.register_next_step_handler(msg,loop_word)  
+        find_word()
+        print(f"isFound: {isFound}")
+        if isFound == True:
+            print("Variable True")
+            bot.send_message(message.chat.id, f"{upperWord} \n Part of speech: {speech}\n Meaning: {meaning}\n Example: {example}")
+            msg = bot.send_message(message.chat.id, "Would you like to look up for another word?  /sure   ||      /nop")      
+            bot.register_next_step_handler(msg,loop_word)  
+        else:
+            print(f"isFound is False")
+            bot.send_message(message.chat.id, "You got me! I dont found the word")
+            msg = bot.send_message(message.chat.id, "Would you like to look up for another word?  /sure   ||      /nop")      
+            bot.register_next_step_handler(msg,loop_word)
 
 #Loop
 @bot.message_handler(content_types=['text'])
@@ -43,14 +51,15 @@ def loop_word(message):
           msg=bot.send_message(message.chat.id, "Please type the word")
           print(f"The word typed is {msg.text}")
           bot.register_next_step_handler(msg,send_response)           
-     else:
-          print("Word different to /sure") 
+     elif message.text == "/nop":
+          print("The word is /nop") 
           bot.send_message(message.chat.id, "See you later, aligater")
-    
-
+     else:
+          print("Unfounded word")
+          bot.send_message(message.chat.id, "I can't understand you, See you soon")
 
 # look up the word    
-def find_word(message):
+def find_word():
     low_Word = word.lower()
     print(f"Searching for {low_Word}.....")
 
@@ -59,25 +68,20 @@ def find_word(message):
         #Validation
         print("I got the word....")
         
+        global isFound
         global speech 
         global meaning
         global example
         global upperWord
         
+        isFound = True
         speech = data[low_Word]["part_of_speech"]
         meaning = data[low_Word]["meaning"]
         example = data[low_Word]["example"]
         upperWord = word.upper()
     else:
         print("You got me! I dont found the word")
-        bot.send_message(message.chat.id, "You got me! I dont found the word")
-        msg = bot.send_message(message.chat.id, "Would you like to look up for another word?  /sure   ||      /nop")      
-        bot.register_next_step_handler(msg,loop_word) 
-
-        #Falta arreglar loop cuando la palabra esta equivocada. 
-   
-
-
+        isFound = False
    
 
 #Check request and status
