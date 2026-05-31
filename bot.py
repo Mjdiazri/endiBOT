@@ -21,7 +21,7 @@ def start(message):
     name = message.chat.first_name  
     bot.send_message(message.chat.id, f"Hey {name}, welcome to EndiBOT!!! I can look up word meanings.")
     msg=bot.send_message(message.chat.id, "Type a word for help you.... ")   
-    bot.register_next_step_handler(msg,send_response ) 
+    bot.register_next_step_handler(msg,send_response) 
 
 #Chatbot Interaction
 @bot.message_handler(content_types=['text'])
@@ -29,18 +29,28 @@ def send_response(message):
         print('comming message....')
         global word
         word = message.text
-        find_word()
+        find_word(message)
         bot.send_message(message.chat.id, f"{upperWord} \n Part of speech: {speech}\n Meaning: {meaning}\n Example: {example}")
-        bot.send_message(message.chat.id, "Would you like to look up another word?     /sure  ||  /nop ")  
+        msg = bot.send_message(message.chat.id, "Would you like to look up for another word?  /sure   ||      /nop")      
+        bot.register_next_step_handler(msg,loop_word)  
 
-@bot.message_handler(commands=['sure'])
-def loop(message):
-     bot.send_message(message.chat.id, "Please type the word for looking...")
-     send_response()     
+#Loop
+@bot.message_handler(content_types=['text'])
+def loop_word(message):
+     print(f"loop_word word: {message.text}")
+     if message.text == "/sure":
+          print("The word is /sure")
+          msg=bot.send_message(message.chat.id, "Please type the word")
+          print(f"The word typed is {msg.text}")
+          bot.register_next_step_handler(msg,send_response)           
+     else:
+          print("Word different to /sure") 
+          bot.send_message(message.chat.id, "See you later, aligater")
+    
 
 
 # look up the word    
-def find_word():
+def find_word(message):
     low_Word = word.lower()
     print(f"Searching for {low_Word}.....")
 
@@ -60,11 +70,12 @@ def find_word():
         upperWord = word.upper()
     else:
         print("You got me! I dont found the word")
-        #develop code for show that the word dont was found and retur to loop function
+        bot.send_message(message.chat.id, "You got me! I dont found the word")
+        msg = bot.send_message(message.chat.id, "Would you like to look up for another word?  /sure   ||      /nop")      
+        bot.register_next_step_handler(msg,loop_word) 
 
-
-
-
+        #Falta arreglar loop cuando la palabra esta equivocada. 
+   
 
 
    
